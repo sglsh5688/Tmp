@@ -1,0 +1,82 @@
+[
+  {
+    "file": "dual_arm_color_sorting_english.mp4",
+    "source_bytes": 5824128,
+    "bytes": 1359078,
+    "duration": 37.0,
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "file": "dual_arm_color_sorting.mp4",
+    "source_bytes": 5073978,
+    "bytes": 1335048,
+    "duration": 37.0,
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "file": "demo1.mp4",
+    "source_bytes": 15987380,
+    "bytes": 659050,
+    "duration": 10.411,
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "file": "cup_ID.mp4",
+    "source_bytes": 9887921,
+    "bytes": 362101,
+    "duration": 5.696,
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "file": "cup_ID2.mp4",
+    "source_bytes": 9240960,
+    "bytes": 362886,
+    "duration": 5.846,
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "file": "cup_OOD.mp4",
+    "source_bytes": 7078127,
+    "bytes": 263735,
+    "duration": 4.523,
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "file": "tape_ID.mp4",
+    "source_bytes": 6816096,
+    "bytes": 244407,
+    "duration": 4.566,
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "file": "tape_OOD1.mp4",
+    "source_bytes": 6302081,
+    "bytes": 228065,
+    "duration": 3.99,
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "file": "tape_OOD2.mp4",
+    "source_bytes": 6100859,
+    "bytes": 236584,
+    "duration": 3.84,
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "file": "tape_OOD3.mp4",
+    "source_bytes": 5705970,
+    "bytes": 275846,
+    "duration": 3.542,
+    "width": 1280,
+    "height": 720
+  }
+]

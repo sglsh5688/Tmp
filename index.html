@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111413">
+    <meta name="description" content="A real-world experiment plan: project video, cup pick and place, tape stacking, and a direction for deformable objects.">
+    <title>Real-world experiments — Experiment plan</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a class="brand" href="#top" aria-label="Real world, back to top">
+          <svg class="brand-mark" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <path d="M3 3h9v9H3zM16 16h9v9h-9z" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16 3h9v9h-9zM3 16h9v9H3z" fill="currentColor"/>
+          </svg>
+          <span>REAL WORLD<span class="brand-subtitle">Experiment plan</span></span>
+        </a>
+        <nav aria-label="Sections">
+          <a href="#showcase"><span>01</span> Showcase</a>
+          <a href="#cup"><span>02</span> Cup</a>
+          <a href="#tape"><span>03</span> Tape</a>
+          <a href="#next"><span>04</span> Next</a>
+        </nav>
+        <span class="draft-label"><span class="status-dot"></span> Working draft</span>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <div class="intro">
+        <div>
+          <p class="eyebrow intro-eyebrow">Real-world experiment plan</p>
+          <h1>Real-world<br><span>experiments.</span></h1>
+        </div>
+        <div class="intro-note">
+          <span class="note-rule" aria-hidden="true"></span>
+          <p>Reference clips.<br>Training & evaluation settings.<br>One direction to explore.</p>
+          <a class="text-link" href="#showcase">Explore the plan <span aria-hidden="true">↘</span></a>
+        </div>
+      </div>
+
+      <section id="showcase" class="plan-section" aria-labelledby="showcase-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">01</span> Showcase</p>
+            <h2 id="showcase-heading">The project-page video.</h2>
+            <p class="section-note">Film one successful run. Showcase only; no evaluation.</p>
+          </div>
+          <span class="section-tag">Main video</span>
+        </div>
+
+        <div class="showcase-layout">
+          <div class="showcase-player">
+            <div class="video-frame">
+              <video id="showcase-video" controls playsinline muted preload="none"
+                poster="assets/posters/dual_arm_color_sorting_english.jpg"
+                aria-label="Dual-arm color sorting, English concept animation">
+                <source src="assets/videos/dual_arm_color_sorting_english.mp4" type="video/mp4">
+                Your browser does not support embedded video.
+                <a href="assets/videos/dual_arm_color_sorting_english.mp4">Open the video</a>.
+              </video>
+              <button class="play-button" data-play="showcase-video" aria-label="Play showcase video">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 4.5v15L20 12 8 4.5Z"/></svg>
+              </button>
+            </div>
+            <div class="showcase-caption">
+              <span data-current-for="showcase-video" aria-live="polite">Dual-arm color sorting · English</span>
+              <span class="caption-note">Reference clip</span>
+            </div>
+          </div>
+
+          <div class="showcase-list" role="group" aria-label="Showcase reference clips">
+            <div class="playlist-heading"><span>Video references</span><span>03</span></div>
+            <button class="clip is-active" data-player="showcase-video"
+              data-src="assets/videos/dual_arm_color_sorting_english.mp4"
+              data-poster="assets/posters/dual_arm_color_sorting_english.jpg"
+              data-title="Dual-arm color sorting · English" aria-pressed="true">
+              <img src="assets/posters/dual_arm_color_sorting_english.jpg" alt="" width="192" height="108" loading="lazy">
+              <span class="clip-info"><span class="clip-type">Concept animation · EN</span><strong>Dual-arm <br>color sorting</strong><span class="clip-duration">00:37 <span aria-hidden="true">↗</span></span></span>
+            </button>
+            <button class="clip" data-player="showcase-video"
+              data-src="assets/videos/dual_arm_color_sorting.mp4"
+              data-poster="assets/posters/dual_arm_color_sorting.jpg"
+              data-title="Dual-arm color sorting · Original" aria-pressed="false">
+              <img src="assets/posters/dual_arm_color_sorting.jpg" alt="" width="192" height="108" loading="lazy">
+              <span class="clip-info"><span class="clip-type">Concept animation · Original</span><strong>Dual-arm <br>color sorting</strong><span class="clip-duration">00:37 <span aria-hidden="true">↗</span></span></span>
+            </button>
+            <button class="clip" data-player="showcase-video"
+              data-src="assets/videos/demo1.mp4" data-poster="assets/posters/demo1.jpg"
+              data-title="Cup demonstration · Demo 01" aria-pressed="false">
+              <img src="assets/posters/demo1.jpg" alt="" width="192" height="108" loading="lazy">
+              <span class="clip-info"><span class="clip-type">Physical demonstration</span><strong>Cup <br>demonstration</strong><span class="clip-duration">00:10 <span aria-hidden="true">↗</span></span></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="cup" class="plan-section" aria-labelledby="cup-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">02</span> Manipulation task</p>
+            <h2 id="cup-heading">Pick & place<span class="object-name">Cup</span></h2>
+          </div>
+          <span class="section-tag">Training & evaluation plan</span>
+        </div>
+
+        <div class="experiment-grid">
+          <article class="experiment-card" aria-labelledby="cup-id-heading">
+            <div class="card-heading">
+              <div><p class="eyebrow">In-distribution</p><h3 id="cup-id-heading">ID setup</h3></div>
+              <span class="usage usage-id">Training + ID evaluation</span>
+            </div>
+            <div class="video-frame">
+              <video id="cup-id-video" controls playsinline muted preload="none" poster="assets/posters/cup_ID.jpg" aria-label="Cup, in-distribution reference 01">
+                <source src="assets/videos/cup_ID.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="assets/videos/cup_ID.mp4">Open the video</a>.
+              </video>
+              <button class="play-button" data-play="cup-id-video" aria-label="Play cup in-distribution reference"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 4.5v15L20 12 8 4.5Z"/></svg></button>
+            </div>
+            <div class="card-footer">
+              <span data-current-for="cup-id-video" aria-live="polite">ID reference 01</span>
+              <div class="clip-switcher" role="group" aria-label="Cup in-distribution references">
+                <button class="is-active" data-player="cup-id-video" data-src="assets/videos/cup_ID.mp4" data-poster="assets/posters/cup_ID.jpg" data-title="ID reference 01" aria-pressed="true" aria-label="Cup ID reference 01">01</button>
+                <button data-player="cup-id-video" data-src="assets/videos/cup_ID2.mp4" data-poster="assets/posters/cup_ID2.jpg" data-title="ID reference 02" aria-pressed="false" aria-label="Cup ID reference 02">02</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="experiment-card ood-card" aria-labelledby="cup-ood-heading">
+            <div class="card-heading">
+              <div><p class="eyebrow">Out-of-distribution</p><h3 id="cup-ood-heading">OOD setup</h3></div>
+              <span class="usage usage-ood">Evaluation only</span>
+            </div>
+            <div class="video-frame">
+              <video id="cup-ood-video" controls playsinline muted preload="none" poster="assets/posters/cup_OOD.jpg" aria-label="Cup, out-of-distribution reference">
+                <source src="assets/videos/cup_OOD.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="assets/videos/cup_OOD.mp4">Open the video</a>.
+              </video>
+              <button class="play-button" data-play="cup-ood-video" aria-label="Play cup out-of-distribution reference"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 4.5v15L20 12 8 4.5Z"/></svg></button>
+            </div>
+            <div class="card-footer"><span>OOD reference 01</span><span class="reference-count">01 clip</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="tape" class="plan-section" aria-labelledby="tape-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">03</span> Manipulation task</p>
+            <h2 id="tape-heading">Stack<span class="object-name">Tape</span></h2>
+          </div>
+          <span class="section-tag">Training & evaluation plan</span>
+        </div>
+
+        <div class="experiment-grid">
+          <article class="experiment-card" aria-labelledby="tape-id-heading">
+            <div class="card-heading">
+              <div><p class="eyebrow">In-distribution</p><h3 id="tape-id-heading">ID setup</h3></div>
+              <span class="usage usage-id">Training + ID evaluation</span>
+            </div>
+            <div class="video-frame">
+              <video id="tape-id-video" controls playsinline muted preload="none" poster="assets/posters/tape_ID.jpg" aria-label="Tape stacking, in-distribution reference">
+                <source src="assets/videos/tape_ID.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="assets/videos/tape_ID.mp4">Open the video</a>.
+              </video>
+              <button class="play-button" data-play="tape-id-video" aria-label="Play tape in-distribution reference"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 4.5v15L20 12 8 4.5Z"/></svg></button>
+            </div>
+            <div class="card-footer"><span>ID reference 01</span><span class="reference-count">01 clip</span></div>
+          </article>
+
+          <article class="experiment-card ood-card" aria-labelledby="tape-ood-heading">
+            <div class="card-heading">
+              <div><p class="eyebrow">Out-of-distribution</p><h3 id="tape-ood-heading">OOD setup</h3></div>
+              <span class="usage usage-ood">Evaluation only</span>
+            </div>
+            <div class="video-frame">
+              <video id="tape-ood-video" controls playsinline muted preload="none" poster="assets/posters/tape_OOD1.jpg" aria-label="Tape stacking, out-of-distribution reference 01">
+                <source src="assets/videos/tape_OOD1.mp4" type="video/mp4">
+                Your browser does not support embedded video. <a href="assets/videos/tape_OOD1.mp4">Open the video</a>.
+              </video>
+              <button class="play-button" data-play="tape-ood-video" aria-label="Play tape out-of-distribution reference"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 4.5v15L20 12 8 4.5Z"/></svg></button>
+            </div>
+            <div class="card-footer">
+              <span data-current-for="tape-ood-video" aria-live="polite">OOD reference 01</span>
+              <div class="clip-switcher" role="group" aria-label="Tape out-of-distribution references">
+                <button class="is-active" data-player="tape-ood-video" data-src="assets/videos/tape_OOD1.mp4" data-poster="assets/posters/tape_OOD1.jpg" data-title="OOD reference 01" aria-pressed="true" aria-label="Tape OOD reference 01">01</button>
+                <button data-player="tape-ood-video" data-src="assets/videos/tape_OOD2.mp4" data-poster="assets/posters/tape_OOD2.jpg" data-title="OOD reference 02" aria-pressed="false" aria-label="Tape OOD reference 02">02</button>
+                <button data-player="tape-ood-video" data-src="assets/videos/tape_OOD3.mp4" data-poster="assets/posters/tape_OOD3.jpg" data-title="OOD reference 03" aria-pressed="false" aria-label="Tape OOD reference 03">03</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="next" class="next-section" aria-labelledby="next-heading">
+        <div class="next-symbol" aria-hidden="true">?</div>
+        <div>
+          <p class="eyebrow"><span class="section-number">04</span> Next direction</p>
+          <h2 id="next-heading">Deformable objects?</h2>
+          <p class="section-note">Task and object to be decided.</p>
+        </div>
+        <span class="tbd-label">TBD <span aria-hidden="true">↗</span></span>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap">
+      <p>Real-world experiments <span aria-hidden="true">/</span> Working plan</p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+    <p id="playback-status" class="playback-status" role="status" hidden></p>
+  </body>
+</html>
