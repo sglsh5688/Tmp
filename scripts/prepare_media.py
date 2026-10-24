@@ -9,7 +9,6 @@ import subprocess
 ROOT = Path(__file__).resolve().parents[1]
 FILES = (
     "dual_arm_color_sorting_english.mp4",
-    "dual_arm_color_sorting.mp4",
     "demo1.mp4",
     "cup_ID.mp4",
     "cup_ID2.mp4",
@@ -58,7 +57,7 @@ def prepare(name, source_dir):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("source", type=Path, help="Directory containing the ten original MP4 files")
+    parser.add_argument("source", type=Path, help="Directory containing the original reference MP4 files")
     args = parser.parse_args()
     missing = [name for name in FILES if not (args.source / name).is_file()]
     if missing:

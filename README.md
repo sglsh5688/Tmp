@@ -1,6 +1,6 @@
 # Real-world experiment plan
 
-A dark, responsive page with ten reference videos and a concise experiment plan. All page content is in English. Plain HTML, CSS, and JavaScript; no build step or external runtime dependencies.
+A dark, responsive page with nine reference videos and a concise experiment plan. All page content is in English. Plain HTML, CSS, and JavaScript; no build step or external runtime dependencies.
 
 ## Preview
 
@@ -14,7 +14,7 @@ Open <http://127.0.0.1:8000>.
 
 | Section | Reference files | Planned use |
 | --- | --- | --- |
-| Project-page video | `dual_arm_color_sorting_english.mp4`, `dual_arm_color_sorting.mp4`, `demo1.mp4` | Film one successful run for a showcase; no evaluation |
+| Project-page video | `dual_arm_color_sorting_english.mp4`, `demo1.mp4` | Film one successful run for a showcase; no evaluation |
 | Pick & place — Cup, ID | `cup_ID.mp4`, `cup_ID2.mp4` | Training + ID evaluation |
 | Pick & place — Cup, OOD | `cup_OOD.mp4` | Evaluation only |
 | Stack — Tape, ID | `tape_ID.mp4` | Training + ID evaluation |
@@ -34,7 +34,7 @@ python3 scripts/prepare_media.py /path/to/original/videos
 ```
 
 Compression sizes and durations are recorded in `assets/media-manifest.json`.
-The ten videos total 5.08 MiB, down from 74.40 MiB (93.2% smaller).
+The nine videos total 3.81 MiB, down from 69.56 MiB (94.5% smaller). The English color-sorting animation is the only version included on the page.
 
 ## Editing
 

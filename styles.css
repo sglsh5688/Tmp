@@ -135,7 +135,7 @@ h3 { margin: 5px 0 0; font-size: 21px; font-weight: 450; letter-spacing: -.03em;
   .intro-note { width: 215px; }
   .intro-note p { font-size: 13px; }
   .showcase-layout { grid-template-columns: 1fr; gap: 25px; }
-  .showcase-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .showcase-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .playlist-heading { grid-column: 1 / -1; }
   .clip { display: block; padding: 8px; }
   .clip img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; }
